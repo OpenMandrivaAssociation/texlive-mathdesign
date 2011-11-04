@@ -1,3 +1,9 @@
+# revision 24173
+# category Package
+# catalog-ctan /fonts/mathdesign
+# catalog-date 2010-07-13 13:53:59 +0200
+# catalog-license gpl
+# catalog-version 1.55
 Name:		texlive-mathdesign
 Version:	1.55
 Release:	1
@@ -678,6 +684,7 @@ alphabets.
 %doc %{_texmfdistdir}/doc/latex/mathdesign/mdput/mdputtest.tex
 %doc %{_texmfdistdir}/doc/latex/mathdesign/mdugm/MD-urw-garamond-doc.pdf
 %doc %{_texmfdistdir}/doc/latex/mathdesign/mdugm/mdugmtest.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -688,6 +695,8 @@ alphabets.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_updmap_d}
 cat > %{buildroot}%{_texmf_updmap_d}/mathdesign <<EOF
 Map mdbch.map
