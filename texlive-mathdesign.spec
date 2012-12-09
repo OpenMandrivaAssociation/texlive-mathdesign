@@ -687,3 +687,17 @@ Map mdbch.map
 Map mdput.map
 Map mdugm.map
 EOF
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.55-2
++ Revision: 753774
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.55-1
++ Revision: 718969
+- texlive-mathdesign
+- texlive-mathdesign
+- texlive-mathdesign
+- texlive-mathdesign
+
