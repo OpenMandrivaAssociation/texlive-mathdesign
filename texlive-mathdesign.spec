@@ -6,7 +6,7 @@
 # catalog-version 2.31
 Name:		texlive-mathdesign
 Version:	2.31
-Release:	6
+Release:	7
 Summary:	Mathematical fonts to fit with particular text fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/mathdesign
