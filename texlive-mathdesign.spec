@@ -1,18 +1,12 @@
-# revision 31639
-# category Package
-# catalog-ctan /fonts/mathdesign
-# catalog-date 2013-08-30 00:42:45 +0200
-# catalog-license gpl
-# catalog-version 2.31
 Name:		texlive-mathdesign
-Version:	2.31
-Release:	10
+Version:	31639
+Release:	1
 Summary:	Mathematical fonts to fit with particular text fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/mathdesign
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdesign.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdesign.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdesign.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdesign.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ be used. Moreover you can choose between three greek fonts (two
 of them created by the Greek Font Society).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -1289,7 +1283,7 @@ of them created by the Greek Font Society).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
