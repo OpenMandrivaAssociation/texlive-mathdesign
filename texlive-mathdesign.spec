@@ -3,7 +3,7 @@ Version:	31639
 Release:	2
 Summary:	Mathematical fonts to fit with particular text fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/mathdesign
+URL:		https://www.ctan.org/tex-archive/fonts/mathdesign
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdesign.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mathdesign.doc.r%{version}.tar.xz
